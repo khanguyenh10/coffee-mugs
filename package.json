@@ -4,8 +4,8 @@
   "description": "tailwind v3.4.17",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
-    "start:dev": "live-server public"
+    "build:css": "tailwindcss -i ./src/input.css -o ./docs/output.css --watch",
+    "start:dev": "live-server docs"
   },
   "keywords": [],
   "author": "kha nguyen",
