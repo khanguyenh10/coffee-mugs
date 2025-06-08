@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./resources/favicon/logo-trungquandev-transparent-bg-256x256-ico.ico" sizes="16x16">
+  <title>Parallax - Trungquandev</title>
+ <style>
+    body {
+  margin: 0;
+}
+
+.content-wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* ... */
+  perspective: 2px;
+}
+
+.parallax,
+.static {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.parallax {
+  height: 100vh;
+  /* ... */
+  transform-style: preserve-3d;
+}
+
+.static {
+  height: 80vh;
+  z-index: 999;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+
+.parallax>.parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* ... */
+  transform: translateZ(-1px) scale(1.5);
+  /* z-index: -1; */
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  font-size: 6rem;
+  /* ... */
+  transform: translateZ(1px) scale(.5);
+  display: none;
+}
+.sub-content {
+  font-size: 2rem;
+  text-align: center;
+}
+.sub-content a {
+  color: inherit;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.sub-content a:hover {
+  color: #1dd1a1;
+}
+ </style>
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="parallax">
+      <div class="parallax-image" style="background-image: url('./resources/parallax-css-trungquandev-02.jpg');"></div>
+      <div class="content">Hey there!</div>
+    </div>
+    <div class="static">
+      <div class="sub-content">Pure CSS Parallax Scrolling Effect</div>
+    </div>
+    <div class="parallax">
+      <div class="parallax-image" style="background-image: url('./resources/parallax-css-trungquandev-03.jpg');"></div>
+      <div class="content">I'm Trungquandev!</div>
+    </div>
+    <div class="static">
+      <div class="sub-content">Pure CSS Parallax Scrolling Effect</div>
+    </div>
+    <div class="parallax">
+      <div class="parallax-image" style="background-image: url('./resources/parallax-css-trungquandev-04.jpg');"></div>
+      <div class="content">From the Earth!</div>
+    </div>
+    <div class="static">
+      <div class="sub-content">
+        <div>Thank you!</div>
+        <div><a href="https://trungquandev.com" target="_blank" rel="noopener noreferrer">Blog: https://trungquandev.com</a></div>
+        <div><a href="https://cv.trungquandev.com" target="_blank" rel="noopener noreferrer">CV: https://cv.trungquandev.com</a></div>
+        <div><a href="https://www.youtube.com/c/TrungquandevOfficial" target="_blank" rel="noopener noreferrer">YouTube: Trungquandev Official</a></div>
+        <div><a href="https://www.vecteezy.com/" target="_blank" rel="noopener noreferrer">Credit to the images from: https://www.vecteezy.com/</a></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#toogleSlider{
+    position: relative;
+    z-index: 2;
+}
+.slider {
+    background-color: aqua;
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: ease-in-out;
+    height: 0px;
+    opacity: 0;
+  
+}
+.slider.open {
+    opacity: 1;
+	height: 50px;
+}
+    </style>
+</head>
+<body>
+   <div class="slider">Some content here....</div>
+   <button id="toogleSlider">toogle Slider</button>
+   <script>
+        const slider = document.querySelector('.slider');
+        const toogleSlider = document.getElementById('toogleSlider');
+        toogleSlider.addEventListener('click', () => {
+            slider.classList.toggle('open');
+        });
+   </script>
+</body>
+</html>
