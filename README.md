@@ -20,10 +20,5 @@ $ npm init -y
 $ npx tailwindcss init --full
 ```
 
-## Các keyword cần tìm hiểu
-```
-- css animate slide down / drop down
-```
-
 ## Icon
 - Lấy SVG từ hero icon 
